@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPORT 8081
+ADD target/BackEnd-docker.jar BackEnd-docker.jar
+ENTRYPOINT ["java","-jar","/BackEnd-docker.jar"]
